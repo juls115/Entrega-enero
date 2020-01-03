@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obtener informaci&oacuten de un usuario</title>
+  <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+  <style media="screen">
+    .label { text-align: right;}
+    .value-cell { width:20%;}
+    span.advertencia {
+      color: darkred;
+    }
+  </style>
+  <script src='../js/jquery-3.4.1.min.js'></script>
+</head>
+<body>
+  <fieldset style="background-color:lightblue">
+    <legend style="background-color:white;border-style: solid; border-width: 2px">DATOS DEL USUARIO</legend>
+    <table style="margin-left:auto;margin-right:auto;">
+      <tr>
+        <td class="label" style="width:33%"><label for="email">Correo: </label></td>
+        <td class="value-cell" style="width:33%"><input type="text" name="email" id="email" size="100%"/></td>
+        <td style="text-align: left;"><span id="sEmail" class="advertencia"></span></td>
+      </tr>
+      <tr>
+        <td class="label"><label for="username">Nombre: </label></td>
+        <td><input type="text" name="name" id="username" size="100%" readonly/></td>
+        <td><span id="susername" class="advertencia"></span></td>
+      </tr>
+      <tr>
+        <td class="label"><label for="surname">Apellidos: </label></td>
+        <td><input type="text" name="apellidos" id="surname" size="100%" readonly/></td>
+        <td><span id="ssurname" class="advertencia"></span></td>
+      </tr>
+      <tr>
+        <td class="label"><label for="phone">Telefono: </label></td>
+        <td><input type="text" name="telefono" id="phone" size="100%" readonly/></td>
+        <td><span id="sphone" class="advertencia"></span></td>
+      </tr>
+      <tr>
+        <td colspan="3" style="text-align: center;"><button type="button" name="getUser" id="rUser" value="Autocompletar">Autocompletar</button></td>
+      </tr>
+    </table>
+  </fieldset>
+  <script src='../js/GetUserInfo.js'></script>
+</body>
+</html>

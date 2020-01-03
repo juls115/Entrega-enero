@@ -1,0 +1,9 @@
+/*Form's table style*/
+td.label { text-align: right; width : 20%}
+td.input {width : 75%}
+input.qInput {width: 90%}
+table.fquest {margin-left:auto;margin-right:auto;border-collapse: separate;border-spacing: 10px}
+.imPrev {height: 200px; display: inline-block}
+td.spanSignUp {width: 40%; display: inline-block}
+td.tdInput {width: 40%}
+input.sInput {width: 80%}

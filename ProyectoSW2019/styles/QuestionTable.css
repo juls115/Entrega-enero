@@ -1,0 +1,33 @@
+/* Question display table */
+#data {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+	background-color: white;
+}
+#data th {
+	border: 1px solid grey;
+	border-collapse: collapse;
+}
+#data td {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: keep-all;
+}
+#data td:hover{
+white-space: normal;
+overflow: visible;
+position: relative;
+}
+#data td:hover span {
+background-color: white;
+border: 2px solid grey;
+display: inline-block;
+height: 100%;
+}
+#data tr:nth-child(even) {
+background-color: lightgrey;
+}
